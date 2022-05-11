@@ -5,105 +5,41 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+body{
+    background-color: grey;
+}
 
-/* Utilities */
-
-.task-color{
-    color: #444851;
+section{
+    padding-left: 60px;
     margin-bottom: 50px;
 }
 
-.task-titles{
-    margin-bottom: 10px;
-}
+/* Utilities */
 
-
-
-.task-subtitles{
-    display: block;
-    margin-left: 10px;
-    margin-bottom: 10px;
-
-}
-
-.button-editorial{
-    border: 2px solid #47adf1;
-    background-color: #47adf1;
-    color: white;
-    padding: 5px 12px;
-    font-size: 10px;
-    cursor: pointer;
+.container{
+    background-color: white;
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
-.check{
+.entity{
     display: inline-block;
     font-size: 20px;
     transform: scale(1, .7);
     text-align: center;
-    color: #77c9b6;
-    border: 2px solid #77c9b6;
     border-radius: 50%;
 }
 
-.cross{
-    display: inline-block;
-    font-size: 20px;
-    transform: scale(1, .7);
-    text-align: center;
-    color: #ec625c;
-    border: 2px solid #ec625c;
-    border-radius: 50%;
-}
 
-.button-qi{
-    border: 2px solid #9c72e4;
-    background-color: #9c72e4;
+.button{
     color: white;
     padding: 5px 12px;
     font-size: 10px;
     cursor: pointer;
     border-radius: 10px;
-}
-
-.button-rec{
-    border: 2px solid #64c0a9;
-    background-color: #64c0a9;
-    color: white;
-    padding: 5px 12px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.button-mobile{
-    border: 2px solid #f29e33;
-    background-color: #f29e33;
-    color: white;
-    padding: 5px 12px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.button-web{
-    border: 2px solid #d863a1;
-    background-color: #d863a1;
-    color: white;
-    padding: 5px 12px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.button-sales{
-    border: 2px solid #b0c926;
-    background-color: #b0c926;
-    color: white;
-    padding: 5px 12px;
-    font-size: 10px;
-    cursor: pointer;
-    border-radius: 10px;
+        
 }
 
 /* Header */
@@ -111,6 +47,8 @@
 .logo{
     height: 90px;
     padding: 20px;
+    margin-bottom: 50px;
+    background-color: white;
 }
 
 img{
@@ -128,44 +66,26 @@ h1{
 }
 
 /* Main */
-main{
-    background-color: grey;
-    padding-top: 50px;
+
+
+/* Head section */
+#head-todo{
+    height: 70px;
+    padding-top: 15px;
+    border-bottom: 2px solid grey;
     
 }
 
-.container{
-    background-color: white;
-    height: 800px;
-    width: 800px;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.bordo{
-    border-bottom: 2px solid grey;
-}
- /* Head section */
-#head-todo{
-    height: 70px;
-    padding-left: 60px;
-    padding-top: 15px;
-}
-
 .button-blue{
-    border: 2px solid black;
+    border: 2px solid #47adf1;
     background-color: #47adf1;
-    color: black;
+    color: white;
     padding: 10px 24px;
     font-size: 15px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.addtask{
-    border-color: #47adf1;
-    color: white;
-}
 
 .button-grey{
     border: 2px solid grey;
@@ -178,15 +98,66 @@ main{
 }
 
 
-hr{
-    size: 3px;
-    border-color: grey;
-}
-
 /* Task Section */
 
-.tasks {
-    padding-left: 60px;
-    padding-top: 50px;
+
+.task{
+    color: #444851;
 }
 
+.task-titles{
+    margin-bottom: 10px;
+}
+
+
+
+.task-subtitles{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* Entities */
+
+.entity.check{
+    color: #77c9b6;
+    border: 2px solid #77c9b6;
+}
+
+.entity.cross{
+    color: #ec625c;
+    border: 2px solid #ec625c;
+}
+
+/* Buttons */
+
+.button.editorial{
+        border: 2px solid #47adf1;
+    background-color: #47adf1;
+}
+
+.button.qi{
+    border: 2px solid #9c72e4;
+    background-color: #9c72e4;
+}
+
+.button.rec{
+    border: 2px solid #64c0a9;
+    background-color: #64c0a9;
+}
+
+.button.mobile{
+    border: 2px solid #f29e33;
+    background-color: #f29e33;
+}
+
+.button.web{
+    border: 2px solid #d863a1;
+    background-color: #d863a1;
+}
+
+.button.sales{
+    border: 2px solid #b0c926;
+    background-color: #b0c926;
+}
